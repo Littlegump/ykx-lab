@@ -6,4 +6,4 @@ This is the system_monitor package.
 This package provides functionality for ...
 """
 
-from .module import SystemMonitor, my_function
+from .module import my_function

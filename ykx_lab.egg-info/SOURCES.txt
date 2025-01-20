@@ -1,8 +1,8 @@
 README.md
 setup.py
-tests/test_module.py
-ykx-lab/__init__.py
-ykx-lab/module.py
+system_monitor/__init__.py
+system_monitor/module.py
+tests/test_module_sm.py
 ykx_lab.egg-info/PKG-INFO
 ykx_lab.egg-info/SOURCES.txt
 ykx_lab.egg-info/dependency_links.txt
