@@ -1,5 +1,5 @@
 import unittest
-from my_pypi_package.module import MyClass, my_function
+from system_monitor.module import MyClass, my_function
 
 class TestMyClass(unittest.TestCase):
 
@@ -8,7 +8,7 @@ class TestMyClass(unittest.TestCase):
 
     def test_method_one(self):
         result = self.my_class_instance.method_one()
-        self.assertEqual(result, expected_value)  # Replace expected_value with the actual expected result
+        self.assertEqual(result, expected_value)  # Replace xpected_value with the actual expected result
 
     def test_method_two(self):
         result = self.my_class_instance.method_two()
