@@ -3,7 +3,7 @@ import requests, flask, django
 
 setup(
     name='ykx-lab',
-    version='0.1.0',
+    version='0.2.0',
     author='RockyYin',
     author_email='yinkaixuan0213@gmail.com',
     description='personal tools for everyone.',
