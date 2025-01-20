@@ -12,20 +12,18 @@ class SystemMonitor:
         """
         get mem usage
         return {
-            "total": bytes,    # 总内存
-            "used": memroy.used,      # 已使用内存
-            "free": memory.available, # 客用内存
-            "percent": memory.percent # 内存使用百分比
+            "total": float GB .2f
+            "used": float GB .2f
+            "free": float GB .2f
+            "percent": Str eg 88.2%
         }
-
-        
         """
         memory = psutil.virtual_memory()
         return {
-            "total": memory.total,    # 
-            "used": memory.used,      # 已使用内存
-            "free": memory.available, # 客用内存
-            "percent": memory.percent # 内存使用百分比
+            "total": float(f"{memory.total/(1024**3):.2f}"),
+            "used": float(f"{memory.used/(1024**3):.2f}") ,      # 已使用内存
+            "free": float(f"{memory.available/(1024**3):.2f}"), # 客用内存
+            "percent": str(memory.percent)+"%" # 内存使用百分比
         }
 
 def my_function():
